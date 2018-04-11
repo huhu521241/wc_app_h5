@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><meta name=description content=涵盖各家银行的信用卡信息,信用卡办理最快捷优惠的平台><meta name=keywords content=信用卡,快捷,优惠><title></title><script>function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r != null) {
+     return unescape(r[2])
+    }
+    return null
+   }
+let tempToken = GetQueryString("key");
+ var token;
+   if(tempToken&&tempToken.length>0){
+       token = tempToken;
+      window.localStorage.setItem("key",token);
+   }</script><script src=./static/pubs.js></script><link href=./static/css/app.cb182a11a9683ec9c304456d2f6f056a.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.b7dc748d5ecdd9b8caf7.js></script><script type=text/javascript src=./static/js/app.e4938c3149d632a77cc3.js></script></body><script src=./static/fastclick.js></script><script>FastClick.attach(document.body);</script></html>
